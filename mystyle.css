@@ -1,0 +1,83 @@
+
+
+#zad6
+{
+        color: red;
+        padding: 20px;
+        border: 6px solid black;
+        border-radius: 6px;
+        background: #e0e0eb;
+}
+
+#pasek{
+			border-style: dotted dashed solid double;
+			border: 2px;
+			background-color: lightgreen;
+			text-align: center;
+}
+ 
+h3 {
+  text-align: left;
+  color: #1c3808;
+  font-size: 16px;
+}   
+
+input {
+	border-style: dotted dashed solid double;
+}	
+
+.but {
+	background: #936dc2;
+	border-style:double;
+	border: 4px black;
+	font-size: 26px;
+	padding: 5px 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+
+.center {
+  text-align: center;
+  color: red;
+}
+
+
+
+
+#ggg
+{
+        color: white;
+        padding: 20px;
+        border: 6px dotted red;
+        border-radius: 8px;
+        box-shadow: 0 0 20px;
+		background: #3377ff;
+}
+ 
+#zzz
+{
+        color: #ff5c33;
+        padding: 1px;
+        border: 1px solid red;
+        border-radius: 4px;
+        box-shadow: 0 0 20px;
+        background: #b3d9ff;
+}
+
+#xxx
+{
+	
+	width:275px;
+	height: 150px;
+	background-image:
+	url('red.jpg');
+	background-color: #cccccc;
+}
+
+body {
+	background-color: #fcfac5;
+}

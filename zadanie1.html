@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+
+<head>
+
+<title>Ćwiczenia 1 - Zabawa obiektem documents i takie tam</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script type="text/javascript" src="js/main.js"></script>
+<link rel="stylesheet" type="text/css" href="style/mystyle.css">
+
+</head>
+
+
+
+
+<body>
+
+<h2><div id = "klik"></div></h2>
+<br><input type="button" class="but" onclick=pierwszyKlik()  value = "Wywołanie funkcji z dołączonego pliku!"> <br><br>
+
+<div id ="pasek">_</div>
+<h3>3) Wewnątrz dokumentu HTML umieść kod JavaScript (tag SCRIPT), który spowoduje wypisanie tekstu 'Tekścik w JavaScript nom nom nom nom....' Wykorzystaj instrukcję document.write() </h3><br>
+
+<script type="text/javascript">
+
+document.write ("Tekścik w JavaScript nom nom nom nom...");
+
+</script>
+
+<div id ="pasek">_</div>
+<h3>4) Podaj przykład zastosowania tagu PRE. Do czego służy ten tag?:</h3><br>
+
+Z pre:
+ <pre>
+            /\
+           /  \
+          /    \
+         /      \
+        /        \
+       /          \
+      /            \
+     /              \
+    /________________\
+	
+	
+	Spacje są uwzględniane.
+	Służy do formatowania tekstu. 
+ </pre>
+ <br>
+ 
+<br><div id ="pasek">_</div>
+<h3><pre>
+Zadanie 5
+
+Zapoznaj się z obiektem document - patrz strona http://www.w3schools.com/jsref/dom_obj_document.asp
+
+Korzystając z instrukcji document.write wewnątrz dokumentu HTML umieść kod, który spowoduje wypisanie w kolejnych wierszach:
+
+tytułu strony
+adresu URL strony
+ostatnia data modyfikacji dokumentu (document.lastModified)
+Wykorzystaj funkcję document.writeln()
+
+Aby tekst był poprawnie wyświetlany w kolejnych wierszach wykorzystaj tag PRE i w środku tego tagu umieść kod JavaScript wypisujący dane z zadania.
+</pre></h3><br>
+
+<pre>
+<script>
+document.writeln("Dane strony:<br>");
+
+document.writeln(document.title);
+document.writeln(document.URL);
+document.writeln(document.lastModified);
+</script>
+</pre>
+
+<div id ="pasek">_</div>
+<h3><pre>Zadanie 6
+
+Do dokumentu dodaj przycisk z tekstem 'ALERT!'. W atrybucie onclick wykorzystaj funkcję alert(), która wyświetli tekst 'BARDZO WAŻNA INFORMACJA - lubię placki :)'
+</pre></h3><br>
+
+<h2><div id = "zad6"></div></h2>
+<br><input type="button" class="but" onclick=alert()  value = "ALERT!"> <br><br>
+
+<div id ="pasek">_</div>
+<h3><pre>Zadanie 7
+
+Łączenie napisów. Przed wykonaniem zadania musisz wiedzieć jakim operatorem łączymy teksty/zmienne. Dowiedz się!
+
+Zdefiniuj 4 zmienne o nazwach :
+
+imie,
+nazwisko,
+wiek,
+napis. 
+Do zmiennej imie przypisz swoje imie np. var imie='Eustachy';
+
+Do zmiennej nazwisko przypisz swoje nazwisko.
+
+Do zmiennej wiek przypisz swój wiek.
+
+Zmienna napis będzie tekstem zbudowanym z połączenia zwykłego tekstu z wyżej zdefiniowanymi zmiennymi imie, nazwisko i wiek. Efektem działania skryptu ma być kod, który wypisze zmienną napis.
+
+Budowa napisu :
+
+Nazywasz się   i masz  lat.
+
+Przykład (kolor zastosowano tylko dla podkreślenia gdzie znajdują się zmienne - w twoim zadaniu będzie zwykły niekolorowy tekst):
+
+Nazywasz się Eustachy Kaszpirowski i masz 17 lat.
+</pre></h3><br>
+<h2><div id = "zad7"></div></h2>
+<br><input type="button" class="but" onclick=text()  value = "Połącz!"> <br><br>
+
+<div id ="pasek">_</div>
+<h3><pre>Zadanie 8
+
+Stwórz przycisk z tekstem "Przeładowanie strony" i zaprogramuj go tak aby po naciśnięciu strona się przeładowywała. Skorzytaj z obiektu location.
+</pre></h3><br>
+
+<br><input type="button" class="but" onclick=refresh()  value = "Przeładowanie strony"> <br><br>
+
+<div id ="pasek">_</div>
+<h3><pre>
+Zadanie 9
+
+Stwórz przycisk z tekstem "Kolorowanie strony" i zaprogramuj go tak aby po naciśnięciu tło zmieniło się na zielone.
+</pre></h3><br>
+<br><input type="button" class="but" onclick=recolor()  value = "Kolor tla!"> <br><br>
+
+<div id ="pasek">_</div>
+<h3><pre>Zadanie 10
+
+Stwórz przycisk z tekstem "Zamknięcie strony" i zaprogramuj go tak aby po naciśnięciu strona się zamykała. Czy da się to zrobić na wszystkich przeglądarkach? 
+</pre></h3><br>
+<br><input type="button" class="but" onclick=reclose()  value = "Zamknij!"> <br><br>
+
+<div id ="pasek">_</div>
+<h3><pre>Zadanie 11
+
+Napisz skrypt, który będzie obliczał miejsce zerowe funkcji liniowej dla podanych w zmiennych wartości a i b. Przykład : a=4, b=8, x=-2
+</pre></h3><br>
+
+<label> Wpisz A </label><input type="text" id="a11" size = "5">
+<label> Wpisz B </label><input type="text" id="b11" size = "5">
+
+<h2><div id = "zad11"></div></h2>
+<br><input type="button" class="but" onclick=liniowa()  value = "Oblicz!"> <br><br>
+
+<div id ="pasek">_</div>
+<h3><pre>Zadanie 12
+
+Zademnostruj użycie komentarzy jednolinijkowych i wielowierszowych w kodzie JavaScript. 
+</pre></h3><br>
+
+<div>
+Jednoliniowe:<br>
+var x = 5;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Declare x, give it the value of 5<br>
+var y = x + 2;&nbsp; // Declare y, give it the value of x + 2
+</div>
+<br><br>
+
+<div>
+Wieloliniowe:<br>
+/*<br>
+The code below will change<br>
+the heading with id = &quot;myH&quot;<br>
+and the paragraph with id = &quot;myP&quot;<br>
+in my web page:<br>
+*/<br>
+document.getElementById(&quot;myH&quot;).innerHTML = &quot;My First Page&quot;;<br>
+document.getElementById(&quot;myP&quot;).innerHTML = &quot;My first paragraph.&quot;;
+ </div>
+
+
+
+<div id ="pasek">_</div>
+<h3><pre>Zadanie 13
+
+Stwórz pole typu input o nazwie (atrybut name) miasto i ustaw jego zawartość na tekst "Bielsko-Biała". Nadaj atrybut id temu polu "miasto". Za pomocą kodu JavaScript i instrukcji document.getElementById(idElementu) pobierz zawartość pola input do zmiennej i wypisz je za pomocą funkcji alert(). 
+
+Dowiedz się jak działa funkcja getElementById().
+
+Jeżeli znasz funkcje - umieść kod w funkcji, która uruchomi zadanie po naciśnięciu przycisku z tekstem "Miasto".
+</pre></h3><br>
+
+<label> Wpisz nazwę miasta</label><input type="text" id="miasto" name="miasto" value="Bielsko-Biala" size = "50">
+
+<h2><div id = "miasto2"></div></h2>
+
+<br><input type="button" class="but" onclick=miasto1()  value = "Miasto!"> <br><br>
+
+<div id ="pasek">_</div>
+<h3><pre>
+Zadanie 14
+
+Stwórz trzy pola typu input o nazwach zmienna_1, zmienna_2, rozwiazanie. Każdemu polu nadaj takie samo id jak name. Każde pole powinno zawierać domyślnie wpisaną liczbę 0. 
+
+Stwórz przycisk z tekstem "DODAJ", po kliknięciu którego w pole o nazwie rozwizanie wpisany zostanie wynik dodawania liczby z pola zmienna_1 i zmienna_2.
+
+Uwaga! Dane pobierane z pola input będą traktowane jako tekst a nie jako liczba. Należy wykorzystać funkcję parseInt() do przekonwertowania tekstu na liczbę.
+</pre></h3><br>
+
+<label> Zmienna 1: </label><input type="text" id="zmienna_1" name="zmienna_1" value = "0" size = "5"> <br>
+<label> Zmienna 2: </label><input type="text" id="zmienna_2" name="zmienna_2" value = "0" size = "5"><br>
+<label> Wynik: </label><input type="text" id="wynik" name="wynik" size = "10">
+
+<br><input type="button" class="but" onclick=dodaj()  value = "Dodaj!"> <br><br>
+
+<div id ="pasek">_</div>
+<h3><pre>
+Zadanie 15
+
+Stwórz trzy pola typu input o nazwach zmienna_a, zmienna_b Każdemu polu nadaj takie samo id jak name. Polu zmienna_a przypisz wartość 5, polu zmienna_b przypisz wartość 100. 
+
+Stwórz przycisk z tekstem "ZAMIEŃ", po kliknięciu którego w pole zmienna_a zostanie podstawiona wartość z pola zmienna_b a w pole zmienna_b zostanie podstawiona wartość z pola zmienna_a.
+</pre></h3><br>
+<label> Zmienna a: </label><input type="text" id="zmienna_a" name="zmienna_a" value = "5" size = "5"> <br>
+<label> Zmienna b: </label><input type="text" id="zmienna_b" name="zmienna_b" value = "100" size = "5"><br>
+
+<br><input type="button" class="but" onclick=zamien()  value = "Zamień!"> <br><br>
+<div id ="pasek">_</div>
+</body>
+
+
+
+</html>
